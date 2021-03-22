@@ -1,0 +1,15 @@
+- Créer une application de traitement de texte basique [ EN COURS ]
+    - [FAIRE PLUS TARD] Sauvegarde (d'abord faire la création de fichier)
+
+- Créer une application de PARAMETRAGES de l'ordinateur
+
+- Créer une application de création d'application
+
+- Pouvoir créer un ficher vierge (soit l'application de traitement de texte)
+
+- Pouvoir créer un dossier
+    - Pouvoir glisser des fichiers dedans
+    - Pouvoir parcourir les fichiers
+    - Pouvoir lancer les applications
+
+- Faire en sorte que les notifications soit sous une même classe PARENTE pour pouvoir gêrer les méthodes (open tout ça...) (voir Errors et ComputerNotification)

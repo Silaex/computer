@@ -1,0 +1,47 @@
+.window-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    min-height: 150px;
+    border: solid var(--smooth-black);
+    background: var(--smooth-white);
+}
+
+.window-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 24px;
+    padding: var(--small-margin-padding);
+    background: var(--smooth-black);
+    color: var(--smooth-white);
+}
+
+.window-infos-container {
+    display: flex;
+    align-items: center;
+}
+
+.window-icon {
+    width: 24px;
+    margin-right: var(--small-margin-padding);
+    filter: drop-shadow(0px 0px 1px var(--dark-grey));
+}
+
+.window-buttons-container {
+    display: flex;
+}
+
+.window-minimize-button, .window-close-button {
+    margin-left: var(--small-margin-padding);
+    cursor: pointer;
+}
+
+.window-minimize-button:hover, .window-close-button:hover {
+    font-weight: bold;
+}
+
+.window-content {
+    flex: 1;
+}

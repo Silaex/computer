@@ -1,0 +1,166 @@
+/*  FICHIER CONTENANT TOUTES LES ANIMATIONS 
+*   TODO: Mettre en plusieurs fichiers les animations et les importer dans 
+*         fichier global.
+*/
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in { animation: fade-in 1s forwards; }
+
+@keyframes zoom-in-entry-fade {
+    from { transform: scale(.75); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.zoom-in-entry-fade { animation: zoom-in-entry-fade 1s forwards; }
+
+@keyframes zoom-in-leaving-fade {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.25); opacity: 0; }
+}
+.zoom-in-leaving-fade { animation: zoom-in-leaving-fade 1s forwards; }
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.fade-out { animation: fade-out 1s forwards; }
+
+@keyframes zoom-out-entry-fade {
+    from { transform: scale(1.25); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.zoom-out-entry-fade { animation: zoom-out-entry-fade 1s forwards; }
+
+
+@keyframes zoom-out-leaving-fade {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(.75); opacity: 0; }
+}
+.zoom-out-leaving-fade { animation: zoom-out-leaving-fade 1s forwards; }
+
+@keyframes from-left {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+.from-left { animation: from-left 1s forwards; }
+
+@keyframes from-right {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+.from-right { animation: from-right 1s forwards; }
+
+@keyframes go-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+.go-left { animation: go-left 1s forwards; }
+
+@keyframes go-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+.go-right { animation: go-right 1s forwards; }
+
+@keyframes go-top {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+}
+.go-top { animation: go-top 1s forwards; }
+
+@keyframes go-bottom {
+    from { transform: translateY(0); }
+    to { transform: translateY(100%); }
+}
+.go-bottom { animation: go-bottom 1s forwards; }
+
+@keyframes go-left-fade {
+    from { transform: translateX(0); }
+    33% { opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+.go-left-fade { animation: go-left-fade 1s forwards; }
+
+@keyframes go-right-fade {
+    from { transform: translateX(0); }
+    33% { opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+.go-right-fade { animation: go-right-fade 1s forwards; }
+
+@keyframes go-top-fade {
+    from { transform: translateY(0); }
+    33% { opacity: 1; }
+    100% { transform: translateY(-100%); opacity: 0; }
+}
+.go-top-fade { animation: go-top-fade 1s forwards; }
+
+@keyframes go-bottom-fade {
+    from { transform: translateY(0); }
+    33% { opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+}
+.go-bottom-fade { animation: go-bottom-fade 1s forwards; }
+
+@keyframes blinking {
+    50% { opacity: 0; }
+}
+.blinking { animation: blinking 1s infinite; }
+
+@keyframes swing-side {
+    33% { right: 0;     left: 50%;  }
+    50% { right: 0;     left: 100%; }
+    66% { right: 50%;   left: 0;    }
+}
+
+.anim-1-2-delay { animation-delay: .5s; }
+.anim-1-delay   { animation-delay: 1s;  }
+.anim-2-delay   { animation-delay: 2s;  }
+
+.anim-1-2-speed { animation-duration: .5s; }
+.anim-1-speed   { animation-duration: 1s;  }
+.anim-2-speed   { animation-duration: 2s;  }
+
+.swing-side { position: relative; }
+.swing-side::before {
+    content         : "";
+    position        : absolute;
+    height          : 100%;
+    bottom          : 0;
+    left            : 0;
+    right           : 110%;
+    border-bottom   : solid .1em var(--secondary-color);
+    animation       : swing-side 2s infinite;
+}
+
+.anim-white.swing-side::before          { border-color: var(--smooth-white);    }
+.anim-black.swing-side::before          { border-color: var(--smooth-black);    }
+.anim-l-grey.swing-side::before         { border-color: var(--light-grey);      }
+.anim-grey.swing-side::before           { border-color: var(--normal-grey);     }
+.anim-d-grey.swing-side::before         { border-color: var(--dark-grey);       }
+.anim-l-red.swing-side::before          { border-color: var(--light-red);       }
+.anim-red.swing-side::before            { border-color: var(--red);             }
+.anim-d-red.swing-side::before          { border-color: var(--dark-red);        }
+.anim-l-orange.swing-side::before       { border-color: var(--light-orange);    }
+.anim-orange.swing-side::before         { border-color: var(--orange);          }
+.anim-d-orange.swing-side::before       { border-color: var(--dark-red);        }
+.anim-l-yellow.swing-side::before       { border-color: var(--light-yellow);    }
+.anim-yellow.swing-side::before         { border-color: var(--yellow);          }
+.anim-d-yellow.swing-side::before       { border-color: var(--dark-yellow);     }
+.anim-l-green.swing-side::before        { border-color: var(--light-green);     }
+.anim-green.swing-side::before          { border-color: var(--green);           }
+.anim-d-green.swing-side::before        { border-color: var(--dark-green);      }
+.anim-l-turquoise.swing-side::before    { border-color: var(--light-turquoise); }
+.anim-turquoise.swing-side::before      { border-color: var(--turquoise);       }
+.anim-d-turquoise.swing-side::before    { border-color: var(--dark-turquoise);  }
+.anim-l-blue.swing-side::before         { border-color: var(--light-blue);      }
+.anim-blue.swing-side::before           { border-color: var(--blue);            }
+.anim-d-blue.swing-side::before         { border-color: var(--dark-blue);       }
+.anim-l-blue.swing-side::before         { border-color: var(--light-blue);      }
+.anim-blue.swing-side::before           { border-color: var(--blue);            }
+.anim-d-blue.swing-side::before         { border-color: var(--dark-blue);       }
+.anim-l-purple.swing-side::before       { border-color: var(--light-purple);    }
+.anim-purple.swing-side::before         { border-color: var(--purple);          }
+.anim-d-purple.swing-side::before       { border-color: var(--dark-purple);     }

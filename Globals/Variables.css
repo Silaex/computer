@@ -1,0 +1,73 @@
+/*
+*   Page de variables ( padding, margin, couleurs...)
+*/
+
+:root {
+
+    --small-margin-padding: 8px;
+    --medium-margin-padding: 12px;
+    --large-margin-padding: 24px;
+
+    --border-radius-3: 3px;
+    --border-radius-6: 6px;
+    --border-radius-9: 9px;
+    --border-radius-12: 12px;
+
+    --bottom-menu-index: 100;
+    --loading-screen-index: 10;
+
+    /* Liste des luminosités */
+    --dark: 35%;
+    --normal: 50%;
+    --light: 75%;
+
+    /* Gris, Noir, Blanc */
+    --light-grey: hsla(0, 0%, var(--light), 100%);
+    --normal-grey: hsla(0, 0%, var(--normal), 100%);
+    --dark-grey: hsla(0, 0%, var(--dark), 100%);
+    --smooth-black: hsla(0, 0%, 15%, 100%);
+    --smooth-white: hsla(0, 0%, 95%, 100%);
+   
+    /* Liste des couleurs */
+
+    --light-red: hsla(360, 50%, var(--light), 100%);
+    --red: hsla(360, 50%, var(--normal), 100%);
+    --dark-red: hsla(360, 50%, var(--dark), 100%);
+    
+    --light-orange: hsla(30, 100%, var(--light), 100%);
+    --orange: hsla(30, 100%, var(--normal), 100%);
+    --dark-orange: hsla(30, 100%, var(--dark), 100%);
+
+    --light-yellow: hsla(40, 100%, var(--light), 100%);
+    --yellow: hsla(40, 100%, var(--normal), 100%);
+    --dark-yellow: hsla(40, 100%, var(--dark), 100%);
+
+    --light-green: hsla(90, 50%, var(--light), 100%);
+    --green: hsla(90, 50%, var(--normal), 100%);
+    --dark-green: hsla(90, 50%, var(--dark), 100%);
+
+    --light-turquoise: hsla(170, 50%, var(--light), 100%);
+    --turquoise: hsla(170, 50%, var(--normal), 100%);
+    --dark-turquoise: hsla(170, 50%, var(--dark), 100%);
+
+    --light-blue: hsla(220, 50%, var(--light), 100%);
+    --blue: hsla(220, 50%, var(--normal), 100%);
+    --dark-blue: hsla(220, 50%, var(--dark), 100%);
+
+    --light-purple: hsla(320, 50%, var(--light), 100%);
+    --purple: hsla(320, 50%, var(--normal), 100%);
+    --dark-purple: hsla(320, 50%, var(--dark), 100%);
+}
+
+html[theme="dark"] {
+    --primary-color: var(--smooth-black);
+    --secondary-color: var(--smooth-white);
+    --tertiary-color: var(--light-grey);
+}
+
+html {  
+    --primary-color: var(--smooth-white);
+    --secondary-color: var(--smooth-black);
+    --tertiary-color: var(--light-grey);
+    --background-color: var(--smooth-white);
+}
